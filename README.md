@@ -15,11 +15,11 @@
 1.This project was design for three kinds of users: user, prime, and admin  
 I have a controller-service-Dao chain to handle the role for each user   
 2.Two main functions to access to database:  
--(1) Allow user to create and check comment  
--(2) Allow user to create edit, and check appointment  
+ -(1) Allow user to create and check comment  
+ -(2) Allow user to create edit, and check appointment  
 3.Two controller-service-Dao chains to handle the function  
--(1)Webcontent/Resource to hold all of the third part resource like JS file and CSS  
--(2)Each function was separate from other function. So error in one function can not impact other. Beside, this design is re-useable. I can put one function into another project without too much change    
+ -(1)Webcontent/Resource to hold all of the third part resource like JS file and CSS  
+ -(2)Each function was separate from other function. So error in one function can not impact other. Beside, this design is re-useable. I can put one function into another project without too much change    
 
 ### Technology:
 1. Spring MVC  
@@ -71,4 +71,6 @@ The main functions include:
 4. Google map  
 5. Allow admin to check, confirm or deny appointment  
 6. Allow admin to check user list and change authority and enable of user  
+  
+This repo is under MIT License: https://opensource.org/licenses/MIT
 
