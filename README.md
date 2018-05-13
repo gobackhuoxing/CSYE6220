@@ -11,25 +11,25 @@
 2. Prime user: can use appointment and google map function  
 3. Admin: can confirm appointment and manage use  
 
-### Overall design  
+### Overall design:
 1.This project was design for three kinds of users: user, prime, and admin  
 I have a controller-service-Dao chain to handle the role for each user   
 2.Two main functions to access to database:  
-1. Allow user to create and check comment  
-2. Allow user to create edit, and check appointment  
+(1) Allow user to create and check comment  
+(2) Allow user to create edit, and check appointment  
 3.Two controller-service-Dao chains to handle the function  
-1.Webcontent/Resource to hold all of the third part resource like JS file and CSS  
-2.Each function was separate from other function. So error in one function can not impact other. Beside, this design is re-useable. I can put one function into another project without too much change    
+(1)Webcontent/Resource to hold all of the third part resource like JS file and CSS  
+(2)Each function was separate from other function. So error in one function can not impact other. Beside, this design is re-useable. I can put one function into another project without too much change    
 
-### Technology:  
+### Technology:
 1. Spring MVC  
 2. Hibernate  
 3. Spring security  
 4. Maven  
 5. JQuery  
 
-### Structure:   
-#### Front-end structure:  
+### Structure: 
+#### Front-end structure:
 1.Home page  
 2.Login page - New account page  
 3.Comment page - Check comment page  
@@ -38,7 +38,7 @@ I have a controller-service-Dao chain to handle the role for each user
 6.Confirm appointment page(admin only) - Appointment list  
 7.Admin page(admin only) - User list - Management page
 
-#### Back-end structure:  
+#### Back-end structure:
 1. Domain package:   
 hold three entities: User, Comment, and Appointment  
 2. Controller layer:  
@@ -57,13 +57,13 @@ JS file, Css file
 9. Maven dependency  
 
 ### Database structure:
-#### Three tables:  
+#### Three tables:
 1 Users: username(PK), name, gender, email, password, authority, enable  
 2 Comment: id(PK), subject, comment, username(FK from users)  
 3 Appointment: id(PK), time, detail, confirm, username(FK from users)  
  ![database](https://github.com/gobackhuoxing/Dating-Web-CSYE6220/blob/master/picture/database.jpg)
  
-#### Functions:  
+#### Functions:
 The main functions include:  
 1. Allow user to sign in and log in their personal account  
 2. Allow user to create and check comment  
